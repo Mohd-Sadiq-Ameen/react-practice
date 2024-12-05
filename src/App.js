@@ -15,8 +15,23 @@ function App() {
         setCount(count + 1);
       }} >Increase</button>
 
+      <Work  name = {count}/>
+
     </div>
   );
 }
+
+
+function Work(props) {
+  return (
+    <div>
+
+      <h2>This is the {props.name} function</h2>
+
+
+    </div>
+  )
+}
+
 
 export default App;
