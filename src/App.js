@@ -1,21 +1,16 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
+import CustomNavbar from './navbar/navbar';
 import './App.css';
 
 function App() {
 
-  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-
-      <h1>Count : {count}</h1>
-
-      <button onClick={() => {
-        setCount(count + 1);
-      }} >Increase</button>
-
-      <Work  name = {count}/>
+      <CustomNavbar />
+      
+      <Work name="Home"/>
 
     </div>
   );
